@@ -34,3 +34,10 @@ setInterval(() => {
     updateCountdown("breve", breveDate);
     updateCountdown("baccalaureate", baccalaureateDate);
 }, 1000);
+
+// مفتاح التبديل لقائمة الجوال
+document.querySelector('.toggle-menu').addEventListener('click', function() {
+    const menu = document.querySelector('.navbar ul');
+    menu.classList.toggle('active');
+});
+
